@@ -1,0 +1,96 @@
+:root {
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.cont-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+
+.main-grid {
+    display: grid;
+    width: 95%;
+    height: 90%;
+    grid-template-columns: repeat(21, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    gap: 8px;
+    border-radius: 10%;
+}
+
+.grid-section {
+    display: flex;
+    border-radius: 20px;
+
+}
+
+
+
+/* grid-row-start / grid-column-start / grid-row-end / grid-column-end */
+#sidebar {
+    grid-area: 1 / 1 / -1 / 4;
+    background-color: lightcoral;
+}
+
+#header {
+    grid-area: 1 / 4 / 3 / -1;
+    background-color: lightblue;
+}
+
+#stat-1 {
+    grid-area: 3 / 4 / 6 / 10;
+    background-color: green;
+}
+
+#stat-2 {
+    grid-area: 3 / 10 / 6 / 16;
+    background-color: purple;
+}
+
+#stat-3 {
+    grid-area: 3 / 16 / 6 / 24;
+    background-color: orange;
+}
+
+#details {
+    grid-row: 6 / span 6;
+    grid-column: 4 / span 5;
+    background-color: plum;
+}
+
+#info {
+    grid-row: 6 / span 9;
+    grid-column: 9 / span 7;
+    background-color: cornflowerblue;
+}
+
+#timeline {
+    grid-row: 6 / -1;
+    grid-column: 16 / -1;
+    background-color: firebrick;
+}
+
+#project {
+    grid-row: 12 / -1;
+    grid-column: 4 / span 5;
+    background-color: lawngreen;
+}
+
+#stat-4 {
+    grid-row: 15 / -1;
+    grid-column: 9 / span 7;
+    background-color: navajowhite;
+}
