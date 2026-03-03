@@ -46,14 +46,17 @@ h3, h4, h5, h6 {
     grid-area: 1 / 1 / -1 / 4;
     background-color: lightcoral;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
+
+    .sidebar-logo {
+        margin-bottom: 15vh;
+    }
 
     ul {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 3vh;
         width: 100%;
         padding: 0;
         margin: 0;
@@ -72,6 +75,7 @@ h3, h4, h5, h6 {
         width: 100%;
         gap: 16px;
         align-content: center;
+        margin-top: auto;
     }
 
     .profile-picture {
@@ -90,6 +94,33 @@ h3, h4, h5, h6 {
 #header {
     grid-area: 1 / 4 / 3 / 24;
     background-color: lightblue;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+
+    .header-button-cont {
+        display: flex;
+        gap: 8px;
+    }
+
+    .header-button {
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        background-color: black;
+        padding: 0;
+        margin: 0;
+        line-height: 0;
+    }
+
+    #new-project-button {
+        width: 150px;
+        border-radius: 50px;
+        color: white;
+        background-color: #9689e8;
+    }
+    
 }
 
 #stat-1 {
